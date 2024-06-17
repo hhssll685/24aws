@@ -6,7 +6,7 @@
         $(function() {
             $("#btn").click(function() {
                 var name = $.trim($("[name=name]").val());
-                var url = 'https://4gh0260hld.execute-api.us-east-1.amazonaws.com/dev?name=' + name;
+                var url = 'https://3rts4jfu38.execute-api.ap-northeast-2.amazonaws.com/dev?name=' + name;
                 $.get(url, function(data) {
                     $("pre").text(JSON.stringify(data, null, 2));
                 });
